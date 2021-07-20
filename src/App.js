@@ -1,10 +1,10 @@
-import "./App.css";
-import Home from "./pages/Home";
-import SearchResults from "./pages/SearchResults";
-import Detail from "./pages/Detail";
-import StaticContext from "./context/StaticContext";
+import "App.css";
+import Home from "pages/Home";
+import SearchResults from "pages/SearchResults";
+import Detail from "pages/Detail";
+import StaticContext from "context/StaticContext";
 import { Link, Route } from "wouter";
-import { GifsContextProvider } from "./context/GifsContext";
+import { GifsContextProvider } from "context/GifsContext";
 
 function App() {
   return (
@@ -12,7 +12,9 @@ function App() {
       <div className="App">
         <section className="App-content">
           <Link to="/">
-            <img className="App-logo" alt="Giffy logo" src="logo.png" />
+            <figure className="App-logo">
+              <img alt="Giffy logo" src="/logo.png" />
+            </figure>
           </Link>
           <GifsContextProvider>
             <Route component={Home} path="/" />
