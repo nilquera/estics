@@ -13,13 +13,13 @@ function App() {
         <section className="App-content">
           <Link to="/">
             <figure className="App-logo">
-              <img alt="Giffy logo" src="/logo.png" />
+              <img alt="Estics logo" src="/logo.png" />
             </figure>
           </Link>
           <GifsContextProvider>
             <Route component={Home} path="/" />
             <Route component={SearchResults} path="/search/:keyword" />
-            <Route component={Detail} path="/gif/:id" />
+            <Route component={Detail} path="/sticker/:id" />
           </GifsContextProvider>
         </section>
       </div>

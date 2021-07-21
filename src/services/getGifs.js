@@ -5,7 +5,7 @@ export default function getGifs({
   keyword = "taxipictures",
   page = 0,
 } = {}) {
-  const apiURL = `${API_URL}/gifs/search?api_key=${API_KEY}&q=${keyword}&limit=${limit}&offset=${
+  const apiURL = `${API_URL}/stickers/search?api_key=${API_KEY}&q=${keyword}&limit=${limit}&offset=${
     page * limit
   }&rating=g&lang=en`;
   return fetch(apiURL)
