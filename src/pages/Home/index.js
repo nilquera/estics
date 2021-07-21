@@ -25,7 +25,7 @@ export default function Home() {
       <form onSubmit={handleSubmit}>
         <button>Buscar</button>
         <input
-          placeHolder="Search a gif here..."
+          placeholder="Search a gif here..."
           onChange={handleChange}
           type="text"
           value={keyword}
