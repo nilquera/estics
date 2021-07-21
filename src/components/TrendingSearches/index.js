@@ -6,8 +6,6 @@ const TrendingSearches = React.lazy(() =>
   import("components/TrendingSearches/TrendingSearches.js")
 );
 
-console.log(TrendingSearches);
-
 export default function LazyTrending() {
   const { isNearScreen, fromRef } = useNearScreen({ distance: "100px" });
 

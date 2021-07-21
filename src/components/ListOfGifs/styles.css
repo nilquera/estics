@@ -3,9 +3,12 @@
 }
 
 .ListOfGifs {
-  column-count: var(--results-columns);
-  column-gap: 0.5em;
+  display: grid;
   min-height: 100vh;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  align-items: center;
+  grid-template-rows: masonry;
 }
 
 .ListOfGifs-item {
